@@ -1,41 +1,7 @@
-// const person: {
-//     name: string,
-//     age: number
-// // } = {
-// const person: {
-//     name: string,
-//     age: number,
-//     hobbies: string[],
-//     role: [number, string]
-// } = {
-//     name: 'Mike',
-//     age: 28,
-//     hobbies: ['Sports', 'Cooking'],
-//     role: [2, 'author']
-// }
-var Role;
-(function (Role) {
-    Role[Role["ADMIN"] = 0] = "ADMIN";
-    Role[Role["READ_ONLY"] = 1] = "READ_ONLY";
-    Role[Role["AUTHOR"] = 2] = "AUTHOR";
-})(Role || (Role = {}));
-var person = {
-    name: 'Mike',
-    age: 28,
-    hobbies: ['Sports', 'Cooking'],
-    role: Role.ADMIN
-};
-// person.role.push('fdas')
-// person.role[1] = 1
-var favoriteActivities;
-favoriteActivities = ['Sports', 321, { name: 'fdsfa', age: 213 }];
-console.log(favoriteActivities);
-console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby.toLocaleUpperCase());
+function add(n1, n2) {
+    return n1 + n2;
 }
-console.log(Role.ADMIN);
-if (person.role === Role.ADMIN) {
-    console.log('is admin');
+function printResult(num) {
+    console.log('Result: ' + num);
 }
+console.log(printResult(add(5, 12)));
