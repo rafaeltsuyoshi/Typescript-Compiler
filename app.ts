@@ -1,3 +1,11 @@
-const user = 'Max'
+let age = 30
 
-console.log(user)
+// const user = 'Max'
+
+// console.log(user)
+
+const button = document.querySelector('button')!
+
+button.addEventListener('click', () => {
+    console.log("Clicked")
+})
